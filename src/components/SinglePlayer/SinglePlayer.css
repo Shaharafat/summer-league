@@ -1,0 +1,37 @@
+.player {
+  padding: 1rem;
+  background-image: linear-gradient(to bottom, #30336b 66px,white 66px)
+}
+
+.player-image {
+  height: 100px;
+  border: 2px solid white;
+}
+
+.player-name{
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+
+.player-flag{
+  width: 50px;
+}
+
+.player-country,
+.player-position{
+  font-size: 1rem;
+  color: #535c68
+}
+
+.player-button{
+  color: #FFFFFF;
+  background: #30336b;
+  font-family: roboto, sans-serif;
+  transition: letter-spacing .2s ease-in-out;
+}
+
+.player-button:hover{
+color: #ffffff;
+  background: #1a1c47;
+  letter-spacing: 2px;
+}
