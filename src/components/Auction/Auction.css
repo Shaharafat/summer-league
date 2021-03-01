@@ -1,0 +1,6 @@
+.auction {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-areas: "team players";
+  gap: 1rem;
+}

@@ -1,5 +1,6 @@
 .header{
   grid-area:header;
+  color: #30336b;
 }
 
 .site-name{

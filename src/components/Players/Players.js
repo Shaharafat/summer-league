@@ -6,7 +6,7 @@
  * Date: 01-03-2021
  *
  */
-
+// depencencies
 import React from "react";
 // import components
 import SinglePlayer from "../SinglePlayer/SinglePlayer";
@@ -22,4 +22,5 @@ const Players = ({ players, buyPlayer }) => {
   );
 };
 
+// export
 export default Players;

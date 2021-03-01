@@ -1,3 +1,12 @@
+/*
+ *
+ * Title: Header
+ * Description: Site simple header component
+ * Author: Shah Arafat
+ * Date: 01-03-2021
+ *
+ */
+// depencencies
 import React from 'react'
 import './Header.css';
 
@@ -10,4 +19,5 @@ const Header = () => {
   )
 }
 
+// export
 export default Header;

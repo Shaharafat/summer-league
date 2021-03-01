@@ -1,5 +1,6 @@
 .team-member{
   background-color: #c2c5fa;
+  position: relative;
 }
 
 .team-member-image{
@@ -17,4 +18,18 @@
 
 .team-member-position{
   font-size: .8rem;
+}
+
+.team-member-remove-icon{
+  color: rgb(248, 97, 97);
+  position: absolute;
+  right: 8px;
+  top:0;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+}
+
+.team-member-remove-icon:hover{
+  color: rgb(248, 64, 64);
+
 }

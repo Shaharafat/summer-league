@@ -1,40 +1,29 @@
-// player data
-import React, { useEffect, useState } from "react";
+/*
+ *
+ * Title: Application component
+ * Description: This component works as root component.
+ * Author: Shah Arafat
+ * Date: 01-03-2021
+ *
+ */
+// dependencies
+import React from "react";
 import "./App.css";
+
+// Compoenents
+import Auction from "./components/Auction/Auction";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Players from "./components/Players/Players";
-import Team from "./components/Team/Team";
-import playersData from "./players-data/players";
 
 function App() {
-  const [players, setPlayers] = useState([]); // state that stores players
-  const [selectedPlayers, setSelectedPlayers] = useState([]); // state that stores selected playersData
-
-  useEffect(() => {
-    setPlayers(playersData);
-  }, []);
-
-  // update isSold property to true when a player is purchased
-  const buyPlayer = (id) => {
-    const updatedPlayers = players.map((player) =>
-      player.id === id ? { ...player, isSold: true } : player
-    );
-    // updated players list
-    setPlayers(updatedPlayers);
-    // update selected players
-    const player = players.find((player) => player.id === id);
-    setSelectedPlayers((existingPlayers) =>
-      [...existingPlayers, player]
-    );
-  };
-
   return (
     <div className="app container">
       <Header />
-      <Team selectedPlayers={selectedPlayers} />
-      <Players players={players} buyPlayer={buyPlayer} />
+      <Auction />
+      <Footer />
     </div>
   );
 }
 
+// export
 export default App;

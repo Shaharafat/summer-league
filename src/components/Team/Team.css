@@ -14,3 +14,18 @@
 .team-member-count{
   font-family: 'roboto condensed', sans-serif;
 }
+
+.total-price-button{
+  background:#30336b;
+  color: #FFF; 
+}
+
+
+.total-price-button:hover{
+  color: #FFF;
+  cursor: default;
+}
+
+.no-player{
+  font-family: 'roboto condensed', sans-serif;
+}
