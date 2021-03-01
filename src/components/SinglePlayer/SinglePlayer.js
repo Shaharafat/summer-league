@@ -9,7 +9,7 @@
 import React from "react";
 import "./SinglePlayer.css";
 
-const SinglePlayer = ({ player, buyPlayer, isSold }) => {
+const SinglePlayer = ({ player, buyPlayer }) => {
   return (
     <div className="player d-flex flex-column shadow-sm rounded-1">
       <div className="d-flex justify-content-between align-items-center">
@@ -31,11 +31,11 @@ const SinglePlayer = ({ player, buyPlayer, isSold }) => {
         <h2 className="player-price fs-4">${player.price}</h2>
       </div>
       <button
-        onClick={buyPlayer}
-        className="player-button btn text-uppercase fw-bold mt-4"
-        disabled={isSold}
+        onClick={() => buyPlayer(player.id)}
+        className="player-button btn text-uppercase fw-bold mt-auto"
+        disabled={player.isSold}
       >
-        {isSold ? "SOLD" : "Buy player"}
+        {player.isSold ? "SOLD" : "Buy player"}
       </button>
     </div>
   );

@@ -1,0 +1,20 @@
+.team-member{
+  background-color: #c2c5fa;
+}
+
+.team-member-image{
+  border: 2px solid white;
+  width: 60px;
+}
+
+.team-member-name,.team-member-price{
+  font-size: 1rem;
+}
+
+.team-member-name{
+  font-family: 'roboto condensed', sans-serif;
+}
+
+.team-member-position{
+  font-size: .8rem;
+}

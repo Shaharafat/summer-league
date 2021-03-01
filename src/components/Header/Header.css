@@ -1,3 +1,7 @@
+.header{
+  grid-area:header;
+}
+
 .site-name{
   font-family: 'Fredoka One', sans-serif;
 }

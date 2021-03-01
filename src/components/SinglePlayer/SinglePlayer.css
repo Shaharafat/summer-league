@@ -1,6 +1,6 @@
 .player {
   padding: 1rem;
-  background-image: linear-gradient(to bottom, #30336b 66px,white 66px)
+  background-image: linear-gradient(to bottom, #30336b 66px, white 66px);
 }
 
 .player-image {
@@ -8,30 +8,29 @@
   border: 2px solid white;
 }
 
-.player-name{
-  font-family: 'Roboto Condensed', sans-serif;
-  
+.player-name {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-.player-flag{
+.player-flag {
   width: 50px;
 }
 
 .player-country,
-.player-position{
+.player-position {
   font-size: 1rem;
-  color: #535c68
+  color: #535c68;
 }
 
-.player-button{
-  color: #FFFFFF;
+.player-button {
+  color: #ffffff;
   background: #30336b;
   font-family: roboto, sans-serif;
-  transition: letter-spacing .2s ease-in-out;
+  transition: letter-spacing 0.2s ease-in-out;
 }
 
-.player-button:hover{
-color: #ffffff;
+.player-button:hover {
+  color: #ffffff;
   background: #1a1c47;
   letter-spacing: 2px;
 }
