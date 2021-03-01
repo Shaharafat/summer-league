@@ -7,6 +7,8 @@
  *
  */
 // dependencies
+import { faMoneyBillAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./SinglePlayer.css";
 
@@ -30,7 +32,9 @@ const SinglePlayer = ({
           <h5 className="player-country">Country: {country}</h5>
           <h5 className="player-position">Position: {position}</h5>
         </div>
-        <h2 className="player-price fs-5">${price}</h2>
+        <h2 className="player-price fs-5">
+          <FontAwesomeIcon icon={faMoneyBillAlt} /> ${price}
+        </h2>
       </div>
       <button
         onClick={() => buyPlayer(id)}
